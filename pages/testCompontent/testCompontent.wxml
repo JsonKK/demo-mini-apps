@@ -1,0 +1,2 @@
+<button bindtap='showCompomentDialog'>自定义组件</button>
+<my-component-dialog bind:determineevent="onMyEvent" bind:cancleevent="cancleBtn" dialog-hidden="{{isHidden}}" title-msg="{{titleMsg}}" input-hidden="{{inputHidden}}" cancle-btn="{{cancleBtn}}" input-place-halder="{{inputPlaceHolder}}" />

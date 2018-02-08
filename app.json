@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/cal/cal",
+    "pages/demo/demo",
+    "pages/demo2/demo2",
+    "pages/logs/logs",
+    "pages/animate/animate",
+    "pages/animate2/animate2",
+    "pages/city-p/city-p",
+    "pages/cityGroup/cityGroup",
+    "pages/picker-view-demo/test",
+    "pages/testCompontent/testCompontent",
+    "pages/importCityGroup/importCityGroup"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

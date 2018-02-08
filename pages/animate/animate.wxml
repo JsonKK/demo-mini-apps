@@ -1,0 +1,14 @@
+<view class="container-column">  
+     
+    <view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{showModalStatus}}">  
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>  
+        <view class="container-column buydes-dialog-container-bottom">  
+          <block wx:for="{{['操作1','操作2','操作3','取消']}}" wx:for-index="index" wx:key="key" wx:for-item="item">  
+              <view bindtap="hideModal" class="buydes-dialog-container-bottom-item" >{{item}}</view>  
+          </block>  
+        </view>  
+    </view>  
+  
+    <image bindtap="showModal" bindload="imageLoad" style="width:{{imageWidth}}px;;height:{{imageHeight}}px;max-width: 100%;" src="http://sliskillshare.oss-cn-beijing.aliyuncs.com/defaultdir/5475badb80e94bf0800122e6137b4a48.jpg"/>  
+  
+</view>  

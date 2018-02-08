@@ -1,0 +1,36 @@
+<view class="content">
+	<view class="symbol">{{symbol}}</view>
+	<view class="screen">{{resultNum}}</view>
+</view>
+
+<view class="btn-group">
+	<button wx:for="{{totalData}}" wx:for-index="j" wx:key="id" wx:if="{{j>=0 && j<4}}" data-index="{{j}}" bindtap="{{item.event}}" class="item {{item.class}}">{{item.name}}</button>
+</view>
+
+<view class="btn-group">
+	<button wx:for="{{totalData}}" wx:for-index="j" wx:key="id" wx:if="{{j>=4 && j<8}}" data-index="{{j}}" bindtap="{{item.event}}" class="item {{item.class}}">{{item.name}}</button>
+</view>
+
+<view class="btn-group">
+	<button wx:for="{{totalData}}" wx:for-index="j" wx:key="id" wx:if="{{j>=8 && j<12}}" data-index="{{j}}" bindtap="{{item.event}}" class="item {{item.class}}">{{item.name}}</button>
+</view>
+
+<view class="btn-group">
+	<button wx:for="{{totalData}}" wx:for-index="j" wx:key="id" wx:if="{{j>=12 && j<16}}" data-index="{{j}}" bindtap="{{item.event}}" class="item {{item.class}}">{{item.name}}</button>
+</view>
+
+<view class="btn-group">
+	<button wx:for="{{totalData}}" wx:for-index="j" wx:key="id" wx:if="{{j>=16 && j<20}}" data-index="{{j}}" bindtap="{{item.event}}" class="item {{item.class}}">{{item.name}}</button>
+</view>
+<!-- <view class="btn-group">
+	<button bindtap="btnClick" class="item dark">退格</button>
+	<button bindtap="btnClick" class="item dark">清屏</button>
+	<button bindtap="btnClick" class="item dark">+/-</button>
+	<button bindtap="btnClick" class="item dark">+</button>
+</view> -->
+<!-- <view class="btn-group">
+	<button bindtap="btnClick" class="item default">7</button>
+	<button bindtap="btnClick" class="item default">8</button>
+	<button bindtap="btnClick" class="item default">9</button>
+	<button bindtap="btnClick" class="item default">-</button>
+</view> -->

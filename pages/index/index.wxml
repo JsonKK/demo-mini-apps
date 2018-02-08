@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view>
+    <text>{{copyText}}</text><button bindtap="copyText">复制</button>
+  </view>
+  
+  <view class="usermotto">
+    <text class="user-motto {{!ischecked ? test : ''}}">{{motto}}</text>
+  </view>
+
+  
+
+  <button bindtap="goToUrl" data-url="pages/cal/cal">计算器</button>
+  <button bindtap="goToUrl" data-url="pages/demo/demo">demo</button>
+  <button bindtap="goToUrl" data-url="pages/animate/animate">animate</button>
+  <button bindtap="goToUrl" data-url="pages/animate2/animate2">animate2</button>
+  <button bindtap="goToUrl" data-url="pages/city-p/city-p">城市</button>
+  <button bindtap="goToUrl" data-url="pages/cityGroup/cityGroup">城市三级联动</button>
+  <button bindtap="goToUrl" data-url="pages/picker-view-demo/test">单选测试</button>
+  <button bindtap="goToUrl" data-url="pages/testCompontent/testCompontent">用于学习的自定义组件模版</button>
+  <button bindtap="goToUrl" data-url="pages/importCityGroup/importCityGroup">自定义组件省市县</button>
+</view>

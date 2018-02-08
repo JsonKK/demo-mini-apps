@@ -1,0 +1,99 @@
+<!-- 02-1-1待付款订单、02-1-2交易关闭 、02-1-3待发货-->
+<!--pages/my-order/order-detail.wxml-->
+<!-- 02-1-1待付款订单-->
+<view class='order-top t-border'>
+	<view class='tit'>待付款</view>
+	<view class='info'>
+		您的订单已提交，请在
+		<text class='txt-red'>59分59秒内</text>完成支付，超时订单自动取消
+	</view>
+</view>
+<!-- 02-1-1待付款订单end  -->
+
+<!-- 02-1-2交易关闭-->
+<view class='order-top t-border'>
+	<view class='tit'>交易关闭</view>
+	<view class='info'>
+		关闭原因：用户主动关闭，我不想买了
+	</view>
+</view>
+<!-- 02-1-2交易关闭end -->
+
+<!-- 02-1-3待发货 -->
+<view class='order-top t-border'>
+	<view class='tit'>待发货</view>
+	<view class='info info2'>
+		<view class='txt-green'>订单支付成功，等待卖家发货 </view>
+		<view>2017-07-27 19:16:22</view>
+
+	</view>
+</view>
+<!-- 02-1-3待发货 end -->
+
+<!-- 02-1-3待发货 退款-->
+<view class='order-top t-border'>
+	<view class='tit'>待发货</view>
+	<view class='info'>退款申请受理中，请耐心等待卖家反馈，若卖家
+		<text class='txt-red'>6天23小时59分</text>内未处理，系统将自动退款。
+	</view>
+</view>
+<!-- 02-1-3待发货 退款end -->
+
+<!-- 02-1-3待发货 拒绝退款-->
+<view class='order-top t-border'>
+	<view class='tit'>待发货</view>
+	<view class='info'>卖家拒绝了您的退款申请，请您在
+		<text class='txt-red'>6天23小时59分</text>内重新申请退款，否则本次申请将关闭，您无法再次发起。
+	</view>
+</view>
+<!-- 02-1-3待发货 拒绝退款end -->
+
+<!-- 02-1-3待收货 -->
+<view class='order-top t-border'>
+	<view class='tit'>卖家已发货</view>
+	<view class='info'>剩余9天23时自动确认</view>
+	<view class='info info2'>
+		<view class='txt-green'>物流信息：【深圳市】已揽收</view>
+		<view>2017-07-27 19:16:22</view>
+
+	</view>
+</view>
+<!-- 02-1-3待收货 end -->
+
+<!-- 交易失败 -->
+<view class='order-top t-border'>
+	<view class='tit'>交易失败</view>
+	<view class='info'>平台将为您退款，3-7个工作日内会退回你的支付账户，请及时查看哦</view>
+</view>
+<!-- 交易失败 end-->
+
+<!-- 交易成功 -->
+<view class='order-top t-border'>
+	<view class='tit success' data-enmu="106" bindtap="btns">交易成功</view>
+</view>
+<!-- 交易成功 end-->
+<!-- 地址 -->
+<view class='address'>
+	<view class='name'>张美丽 13796541236</view>
+	<view class='addr'>福建省 泉州市 丰泽区 丰海路南威软件大厦2号楼15层</view>
+</view>
+<!-- 地址end -->
+<view bindtap="showPicker">显示picker</view>
+<view class="{{isShowReason ? '' : 'hide'}}">
+	<view bindtap="reasonBtn" data-type="cancle">取消</view>
+	<view bindtap="reasonBtn" data-type="confirm">确定</view>
+	<picker-view indicator-style="height: 50px;" style="width: 100%; height: 150px;" value="{{value}}" catchchange="pickerChange">
+		<picker-view-column>
+			<view wx:for="{{reasons}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+		</picker-view-column>
+	</picker-view>
+</view>
+
+<!--<view class="section">
+	<view class="section__title">普通选择器</view>
+	<picker bindchange="bindPickerChange" value="{{index}}" range="{{reasons}}">
+		<view class="picker">
+			当前选择：{{array[index]}}
+		</view>
+	</picker>
+</view>-->

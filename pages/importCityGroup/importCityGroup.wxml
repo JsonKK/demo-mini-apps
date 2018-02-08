@@ -1,0 +1,6 @@
+<button type="mini" bindtap="changeAreaBox">出来吧省市县</button>
+<view>
+	<text space="emsp">{{addressText}}</text>
+</view>
+<!-- <my-component-dialog bind:determineevent="onMyEvent" bind:cancleevent="cancleBtn" dialog-hidden="{{isHidden}}" title-msg="{{titleMsg}}" input-hidden="{{inputHidden}}" cancle-btn="{{cancleBtn}}" input-place-halder="{{inputPlaceHolder}}" /> -->
+<city-group bind:determineevent="changeAreaBox" show-area="{{isShowArea}}" is-build="{{isBuild}}" address-text="{{addressText}}" />

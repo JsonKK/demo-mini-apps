@@ -1,0 +1,4 @@
+<view class="container-column" wx:if="{{isShow}}">
+	<view animation="{{animationCloudData}}" class="view">我是一个会动的小块块</view>
+</view>
+<button class="bottom-btn" type="primary" bindtap="comeOn">动起来</button>

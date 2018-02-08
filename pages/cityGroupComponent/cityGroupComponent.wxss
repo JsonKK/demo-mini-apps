@@ -1,0 +1,164 @@
+/* pages/purchase/add-addr.wxss */
+.addr-list{
+    position: relative;
+}
+.addr-list .li-cell{
+    color: #666;
+}
+.addr-list .right-text{
+    position: absolute;
+    right: 24rpx;
+    top:16rpx;
+    text-align: right;
+    left: 180rpx;
+    display: block;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.addr-list .right-text input{
+    width: 100%;
+    font-size: 28rpx;
+    display: block;
+    line-height: 60rpx;
+    height: 60rpx;
+    color: #282828;
+    min-height: 0;
+}
+.addr-list .loaction .right-text {
+    right:70rpx;
+}
+.addr-list .loaction::before{
+    font-family: icon-font;
+    content: "\E909";
+    font-size: 32rpx;
+    color: #bbb;
+    right: 32rpx;
+    position: absolute;
+    top:29rpx;
+}
+.li-cell.area-box{
+    height: 120rpx;
+    background: white;
+}
+.li-cell.area-box textarea{
+    height: 100%;
+    width: 100%;
+    color: #282828;
+}
+.setting{
+    margin-top: 24rpx;
+}
+.switch{
+    width: 88rpx;
+    height: 48rpx;
+    margin-top: -4rpx;
+}
+switch{
+    margin-top: -4rpx;
+    vertical-align: top;
+}
+.btn-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.btn-box button:only-child{
+    background: #bb0000;
+    border-radius: 6rpx;
+    height: 96rpx;
+    margin: 24rpx;
+    line-height: 96rpx;
+    color: white;
+    font-size: 30rpx;
+}
+.btn-box button.primery:active{
+    opacity: .8;
+}
+.btn-box button{
+    flex: 1;
+    height: 96rpx;
+    line-height: 96rpx;
+    font-size: 30rpx;
+}
+.btn-box button.primery{
+    background: #bb0000;
+    color: white;
+}
+.btn-box button.disabled{
+    color: white;
+    background: #bbb;
+}
+.input-placeholder{
+    line-height: 38rpx;
+}
+
+/* 全局样式 */
+
+.picker {
+    background: white;
+}
+
+.picker picker-view {
+    width: 100%;
+    height: 480rpx;
+}
+
+.picker .top-box {
+    position: relative;
+    padding: 20rpx 24rpx;
+    height: 56rpx;
+    background: #f2f2f2;
+}
+
+.picker .top-box view {
+    font-size: 24rpx;
+    line-height: 54rpx;
+    width: 136rpx;
+    border: solid 1rpx #999;
+    text-align: center;
+    border-radius: 28rpx;
+}
+
+.picker .top-box .right {
+    position: absolute;
+    right: 24rpx;
+    top: 20rpx;
+    background: #b00;
+    border-color: #b00;
+    color: white;
+}
+
+.picker .top-box text {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 96rpx;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top: 0;
+    font-size: 36rpx;
+}
+
+picker-view-column {
+    text-align: center;
+    font-size: 26rpx;
+}
+
+picker-view-column view {
+    line-height: 96rpx;
+}
+
+.indicator {
+    height: 96rpx;
+    font-size: 30rpx;
+}
+
+.mask.sink {
+    z-index: -1;
+    visibility: hidden;
+}

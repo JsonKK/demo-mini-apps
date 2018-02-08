@@ -1,0 +1,21 @@
+<view class="mask {{showArea ? '' : 'sink'}}" bindtap="changeAreaBox">
+    <view class="bottom-msg picker" catchtap="returnChangeAreaBox">
+        <view class="top-box b-border">
+            <view class="left" bindtap="changeAreaBox">取消</view>
+            <text>省市区选择</text>
+            <view class="right" data-name="submit" bindtap="changeAreaBox">确定</view>
+        </view>
+        <picker-view indicator-class="indicator" value="{{value}}" bindchange="bindChange">
+            <picker-view-column>
+                <view wx:for="{{provinces}}" wx:key="{{index}}">{{item.name}}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view wx:for="{{citys}}" wx:key="{{index}}">{{item.name}}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view wx:for="{{countys}}" wx:key="{{index}}">{{item.name}}</view>
+            </picker-view-column>
+        </picker-view>
+
+    </view>
+</view>
